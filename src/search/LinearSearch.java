@@ -28,6 +28,8 @@ public class LinearSearch implements Search {
 		// Will throw an appropriate exception
 		if (listToSearch == null)
 			throw new NullPointerException("listToSearch is null");
+		else if(listToSearch.contains(null))
+			throw new NullPointerException("listToSearch contains a null element");
 		else if (listToSearch.isEmpty())
 			throw new IllegalArgumentException("listToSearch has no entries in it");
 

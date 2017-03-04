@@ -20,7 +20,7 @@ public class BubbleSort implements Sort {
 	 * @return an ArrayList of Integers that are sorted in ascending order.
 	 */
 	@Override
-	public ArrayList<Integer> sort(List<Integer> toSort) {
+	public ArrayList<Integer> sort(List<Integer> toSort) throws NullPointerException {
 		
 		// copy the contents of the toSort List into an ArrayList
 		ArrayList <Integer> copiedList = copyGivenList(toSort);
